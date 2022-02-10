@@ -18,7 +18,6 @@ def find_password():
     except FileNotFoundError:
         messagebox.showerror(title="Error", message="No data File Found")
 
-    
     else:
         if len(website) <= 0:
             messagebox.showerror(title="Error", message="Please add the website data")
@@ -33,6 +32,7 @@ def find_password():
 
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
+
 def generater():
 
     password = input_password.get()
@@ -58,7 +58,6 @@ def generater():
             input_password.insert(0, combination_password)
     else:
         input_password.insert(0, combination_password)
-
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
@@ -95,7 +94,6 @@ def save():
             input_website.delete(0, END)
             input_password.delete(0, END)
             input_website.focus()
-    
 
 # ---------------------------- UI SETUP ------------------------------- #
 
