@@ -10,15 +10,6 @@ import random
 def find_password():
 
     website = input_website.get()
-    email = input_email.get()
-    password = input_password.get()
-
-    new_data_password = {
-        website: {
-            "Email": email,
-            "Password": password
-        }
-    }
 
     try:
         with open("password_manager.json", "r") as data_password:
